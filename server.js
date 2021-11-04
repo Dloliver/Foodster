@@ -10,7 +10,7 @@ app.use(cors());
 
 // Controller connection
 const foodController = require('./controllers/food.js')
-app.use('/food', foodController)
+app.use('/foodster', foodController)
 
 // Listener and Mongoose connection
 app.listen(3000, () => {
