@@ -16,7 +16,7 @@ const foodController = require('./controllers/food.js')
 app.use('/foodster', foodController)
 
 // Listener and Mongoose connection
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Listening to Foodster app...');
 })
 // Connect to Mongo
